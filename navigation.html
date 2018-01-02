@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gotube navigation</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<style type="text/css">
+		
+		.header{
+			background-color: silver;
+			position: relative;
+			color: white;
+		}
+
+		.navigation{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			background-color: gray;
+			width: 30%;
+			height: 100%;
+			transform: translateX(-90%);
+			text-align: center;
+			
+			
+			
+		}
+
+		
+		.wrapper{
+
+			transform: translateX(0%);
+			transition: transform 0.6s ease;
+		}
+
+	.open{
+			transform: translateX(20%);
+               }
+
+
+		.navigation .toggle{
+			text-align: center;
+			color: white;
+		}
+
+		.navigation li{
+			list-style-type: none;
+		}
+
+		.navigation a{
+			width: 40px;
+			font-size: 20px;
+			color: white;
+		}
+
+		/*the new part*/
+
+	.col-lg-10	li{
+			list-style-type: none;
+			float: left;
+		}
+
+		.col-lg-10 a{
+			text-decoration: none;
+			padding: 15px;
+		}
+
+		.col-lg-12{
+			margin-bottom: 1em;
+			background-color: #e2e2e2;
+		}
+
+		.col-lg-2 img{
+			width: 50px;
+			border-radius: 100%;
+			margin-left: 50px;
+			border: 1px solid brown;
+			padding: 5px;
+		}
+
+		.fa-bars{
+			font-size: 40px;
+			margin-left: 40px;
+		}
+
+		video{
+			width: 100%;
+			height: 300px;
+			margin-top: 20px;
+		}
+		.icon{
+			float: right;
+			font-size: 20px;
+			margin-right: 10px;
+			padding: 5px;
+			line-height: 10px;
+		}
+		.navigation ul{
+			margin-top: 60px;
+		}
+	
+		.span{
+			display: block;
+		}
+		textarea{
+			overflow: hidden;
+			border:none;
+			border-bottom: 2px solid black;
+
+		}
+
+		
+		
+
+
+	</style>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$(".toggle").click(function(){
+				$(".wrapper").toggleClass("open");
+			});
+			
+		});
+
+		
+
+			
+			
+			
+			$(document).ready(function(){
+
+
+			$(".reply").click(function(){
+
+				$(".box").slideDown(500);
+				$(".box").removeClass("box");
+			});
+			})
+		
+	</script>
+
+		<div class="wrapper">
+<div class="header bg-info ">
+	<i class="fa fa-bars toggle"></i>
+	<nav class="navigation bg-info">
+		
+		<ul>
+			<li><a href="">home</a><i class="fa fa-facebook icon "></i></li>
+			<li><a href="">home</a><i class="fa fa-desktop icon "></i></li>
+			<li><a href="">home</a><i class="fa fa-laptop icon "></i></li>
+			<li><a href="">home</a><i class="fa fa-book icon "></i></li>
+			<li><a href="">home</a><i class="fa fa-twitter icon "></i></li>
+			<li><a href="">home</a><i class="fa fa-mobile icon "></i></li>
+			<li><a href="">home</a><i class="fa fa-laptop icon "></i></li>
+			<li><a href="">home</a><i class="fa fa-book icon "></i></li>
+		</ul>
+	</nav>
+</div><!--end of the header-->
+
+
+<div class="container">
+				
+				<div class="row">
+					<div class="col-lg-8">
+
+						<div class="row">
+							<div class="col-lg-12">
+								<video src="video/one.mp4" controls="">
+									
+								</video>
+							</div>
+
+							<div class="col-lg-2">
+								<img src="img/kawsu.jpg">
+							</div>	
+
+							<div class="col-lg-10">
+								<p>
+									
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<hr>
+								<ul>
+								<li><a href="" class="reply">Reply</a></li>
+								<li><a href="">10</a></li>
+								<li><a href=""><i class="fa fa-thumbs-up"></i></a></li>
+								<li><a href=""><i class="fa fa-thumbs-down"></i></a></li>
+								</ul>
+								<br>
+								
+								<div class="row box">
+									<div class="col-lg-2">
+										<img src="img/kawsu.jpg" >
+									</div>
+
+									<div class="col-lg-10 ">
+										<textarea cols="40" rows="2">
+											
+										</textarea>
+										<ul>
+											<li ><a href="">cancel</a></li>
+											<li><a href="">submit</a></li>
+
+										</ul>
+									</div>
+								</div>
+
+							</div><!--end of the col 10-->
+
+
+
+						</div>
+						
+					</div><!--end of col 8-->
+
+					<div class="col-lg-4">
+
+						<div class="col-lg-12">
+							<video src="video/two.mp4" controls="">
+									
+								</video>
+						</div>
+
+						<div class="col-lg-12">
+							<video src="video/three.mp4" controls="">
+									
+								</video>
+						</div>
+
+						<div class="col-lg-12">
+							<video src="video/four.mp4" controls="">
+									
+								</video>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container">
+				
+				<div class="row">
+					
+		
+
+
+					
+
+
+
+				</div<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">kawsu jabbi Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">susman</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+
+			</div>
+
+</div><!--end of the big container-->
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
